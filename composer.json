@@ -1,0 +1,35 @@
+{
+    "name": "robinvda/bg-dash",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Robin",
+            "email": "robin@weap.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0|^10.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "BgDash\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BgDash\\BgDashServiceProvider"
+            ]
+        }
+    }
+}
